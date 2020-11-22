@@ -5,102 +5,123 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
     <title>PG Plzeň</title>
     <link rel="stylesheet" href="css/normalize.css?8.0.1">
-    <link rel="stylesheet" href="css/typebase.css?0.1.0-custom-1">
+    <link rel="stylesheet" href="css/typebase.css?0.1.0">
+    <link rel="stylesheet" href="css/custom.css?1">
 </head>
-<body>
+<body class="wrapper">
 
 <header>
     <div class="logo"></div>
-    <h1 class="header">PG Plzeň</h1>
+    <h1 class="--sr-only">PG Plzeň</h1>
 </header>
 
 
 <nav id="toc">
-    <h3>Obsah</h3>
-    <ol>
-        <li><a href="#startoviste">Startoviště</a></li>
-        <li><a href="#prispevky">Příspěvky</a></li>
-        <li><a href="#pocasi">Počasí</a></li>
-        <li><a href="#kontakty">Kontakty</a></li>
+    <h3 class="--sr-only">Obsah</h3>
+    <ol class="menu">
+        <li><a class="menu__link" href="#startoviste">Startoviště</a></li>
+        <li><a class="menu__link" href="#prispevky">Příspěvky</a></li>
+        <li><a class="menu__link" href="#pocasi">Počasí</a></li>
+        <li><a class="menu__link" href="#kontakty">Kontakty</a></li>
     </ol>
 </nav>
 
 
-<h2 id="startoviste">Startoviště</h2>
-<p>Prosíme všechny piloty o ohleduplné chování na startovištích a přejeme příjemné zážitky!</p>
-<h3>Doubrava</h3>
-<ul>
-    <li>📍 poblíž obce Poleňka (okres Klatovy) / směr větru 270-360° / převýšení 280m (<a href="https://www.paragliding-mapa.cz/startovacky/detail/60/doubrava">PG Mapa</a>)</li>
-    <li>🛫 <strong>Start:</strong> široký lesní průsek (<a href="https://www.google.com/maps/place/49.4327511N,13.2029097E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.2029097,49.4327511">Mapy.cz</a>)</li>
-    <li>🛬 <strong>Přistání:</strong> louka přímo pod kopcem (mezi silnicí a potokem) (<a href="https://www.google.com/maps/place/49.4352778N,13.1866664E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.1866664,49.4352778">Mapy.cz</a>)</li>
-    <li>⚠️ <strong>Pozor:</strong> turbulence na startu při větru >310°, provoz na LKKT při XC letech (hlášení provozu na tel. <a href="tel:+420376570757">+420&nbsp;376&nbsp;570&nbsp;757</a>)</li>
-    <li>🅿️ <strong>Parkování:</strong> na okraji přistávací plochy, nahoru max. 3 auta členů PG Plzeň, domluva na vývozy přes <a href="#kontakty">klubový WhatsApp</a></li>
-    <li>📄 <a href="files/rad-doubrava.pdf">Provozní řád</a></li>
-</ul>
-<h3>Švihov</h3>
-<ul>
-    <li>📍 poblíž obce Lhovice (okres Klatovy) / směr větru 60-140° / převýšení 50m (<a href="https://www.paragliding-mapa.cz/startovacky/detail/63/svihov">PG Mapa</a>)</li>
-    <li>🛫 <strong>Start:</strong> téměř celá louka (<a href="https://www.google.com/maps/place/49.4933864N,13.2673436E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.2673436,49.4933864">Mapy.cz</a>)</li>
-    <li>🛬 <strong>Přistání:</strong> téměř celá louka</li>
-    <li>⚠️ <strong>Pozor:</strong> část louky vpravo dole (neposečený pruh trávy) je v cizím vlastnictví – nepoužívat</li>
-    <li>🅿️ <strong>Parkování:</strong> na dolním okraji louky</li>
-</ul>
-<h3>Koterov</h3>
-<ul>
-    <li>📍 poblíž vyhlídky Koterov (okres Plzeň-město) / směr větru 240-315° / převýšení 60m (<a href="https://www.paragliding-mapa.cz/startovacky/detail/61/koterov">PG Mapa</a>)</li>
-    <li>🛫 <strong>Start:</strong> louka / rampa (<a href="https://www.google.com/maps/place/49.7217156N,13.4351044E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.4351044,49.7217156">Mapy.cz</a>)</li>
-    <li>🛬 <strong>Přistání:</strong> louka v okolí rukávu (<a href="https://www.google.com/maps/place/49.7202758N,13.4315433E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.4315433,49.7202758">Mapy.cz</a>)</li>
-    <li>⚠️ <strong>Pozor:</strong> elektrické vedení v okolí přistání, turbulence vlevo od startu při větru <250°</li>
-    <li>🅿️ <strong>Parkování:</strong> vedle startu nebo na okraji přistávací plochy</li>
-</ul>
-<!--TODO další terény?-->
-<!--<h3>Svatobor?</h3>-->
-<!--<h3>Kalovy?</h3>-->
-<!--<h3>Třebouňák?</h3>-->
-<!--<h3>Špičák?</h3>-->
+<section class="wrapper__section">
+    <h2 class="hug" id="startoviste">Startoviště</h2>
+    <p>Prosíme všechny piloty o ohleduplné chování na startovištích a poctivé placení příspěvků. Přejeme vám bezpečné a krásné lety!</p>
+    <h3>Doubrava</h3>
+    <ul class="emoji_list">
+        <li><span class="emoji_list__bulet">📍</span> poblíž obce Poleňka (okres Klatovy) / směr větru 270-360° / převýšení 280m (<a href="https://www.paragliding-mapa.cz/startovacky/detail/60/doubrava">PG Mapa</a>)</li>
+        <li><span class="emoji_list__bulet">🛫</span> <strong>Start:</strong> široký lesní průsek (<a href="https://www.google.com/maps/place/49.4327511N,13.2029097E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.2029097,49.4327511">Mapy.cz</a>)</li>
+        <li><span class="emoji_list__bulet">🛬</span> <strong>Přistání:</strong> louka přímo pod kopcem (mezi silnicí a potokem) (<a href="https://www.google.com/maps/place/49.4352778N,13.1866664E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.1866664,49.4352778">Mapy.cz</a>)</li>
+        <li><span class="emoji_list__bulet">⚠️</span> <strong>Pozor:</strong> turbulence na startu při větru >310°, provoz na LKKT při XC letech (hlášení provozu na tel. <a href="tel:+420376570757">+420&nbsp;376&nbsp;570&nbsp;757</a>)</li>
+        <li><span class="emoji_list__bulet">🅿️</span> <strong>Parkování:</strong> na okraji přistávací plochy, nahoru max. 3 auta členů PG Plzeň, domluva na vývozy přes <a href="#kontakty">klubový WhatsApp</a></li>
+        <li><span class="emoji_list__bulet">📄</span> <a href="files/rad-doubrava.pdf">Provozní řád</a></li>
+    </ul>
+    <h3>Švihov</h3>
+    <ul class="emoji_list">
+        <li><span class="emoji_list__bulet">📍</span> poblíž obce Lhovice (okres Klatovy) / směr větru 60-140° / převýšení 50m (<a href="https://www.paragliding-mapa.cz/startovacky/detail/63/svihov">PG Mapa</a>)</li>
+        <li><span class="emoji_list__bulet">🛫</span> <strong>Start:</strong> téměř celá louka (<a href="https://www.google.com/maps/place/49.4933864N,13.2673436E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.2673436,49.4933864">Mapy.cz</a>)</li>
+        <li><span class="emoji_list__bulet">🛬</span> <strong>Přistání:</strong> téměř celá louka</li>
+        <li><span class="emoji_list__bulet">⚠️</span> <strong>Pozor:</strong> část louky vpravo dole (neposečený pruh trávy) je v cizím vlastnictví – nepoužívat</li>
+        <li><span class="emoji_list__bulet">🅿️</span> <strong>Parkování:</strong> na dolním okraji louky</li>
+    </ul>
+    <h3>Koterov</h3>
+    <ul class="emoji_list">
+        <li><span class="emoji_list__bulet">📍</span> poblíž vyhlídky Koterov (okres Plzeň-město) / směr větru 240-315° / převýšení 60m (<a href="https://www.paragliding-mapa.cz/startovacky/detail/61/koterov">PG Mapa</a>)</li>
+        <li><span class="emoji_list__bulet">🛫</span> <strong>Start:</strong> louka / rampa (<a href="https://www.google.com/maps/place/49.7217156N,13.4351044E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.4351044,49.7217156">Mapy.cz</a>)</li>
+        <li><span class="emoji_list__bulet">🛬</span> <strong>Přistání:</strong> louka v okolí rukávu (<a href="https://www.google.com/maps/place/49.7202758N,13.4315433E">Google Maps</a>, <a href="https://mapy.cz/zakladni?base=ophoto&source=coor&id=13.4315433,49.7202758">Mapy.cz</a>)</li>
+        <li><span class="emoji_list__bulet">⚠️</span> <strong>Pozor:</strong> elektrické vedení v okolí přistání, turbulence vlevo od startu při větru <250°</li>
+        <li><span class="emoji_list__bulet">🅿️</span> <strong>Parkování:</strong> vedle startu nebo na okraji přistávací plochy</li>
+    </ul>
+    <!--TODO další terény?-->
+    <!--<h3>Svatobor?</h3>-->
+    <!--<h3>Kalovy?</h3>-->
+    <!--<h3>Třebouňák?</h3>-->
+    <!--<h3>Špičák?</h3>-->
+</section>
 
 
-<h2 id="prispevky">Příspěvky</h2>
-<!--TODO výše příspěvků?-->
-<p>Zaplacením přispíváte na nájem startovacích a přistávacích ploch, jejich údržbu a provoz meteo sond. Náš klub negeneruje zisk.</p>
-<ul>
-    <li><strong>Částka:</strong> roční 500 Kč / denní 100 Kč</li>
-    <li><strong>Číslo účtu:</strong> 2501830407/2010 <strong class="extra">– POZOR, 1.12.2020 proběhla změna čísla účtu!</strong> (QR platby tuto změnu již reflektují)</li>
-    <li><strong>Zpráva pro příjemce:</strong> <a href="https://www.xcontest.org/world/cs/profil/">XContest</a> uživatelské jméno (pokud nepoužíváte XContest, tak: Jméno Příjmení). Prosíme nepište do zprávy nic jiného, usnadníte nám tím orientaci, děkujeme.</li>
-</ul>
-<figure>
-    <img src="files/qr-500.png" alt="QR platba 500 Kč">
-    <figcaption>Roční příspěvek 500 Kč</figcaption>
-</figure>
-<figure>
-    <img src="files/qr-100.png" alt="QR platba 100 Kč">
-    <figcaption>Denní příspěvek 100 Kč</figcaption>
-</figure>
+<section class="wrapper__section">
+    <h2 class="hug" id="prispevky">Příspěvky</h2>
+    <!--TODO výše příspěvků?-->
+    <p>Zaplacením přispíváte na nájem startovacích a přistávacích ploch, jejich údržbu a provoz meteo sond. Náš klub negeneruje zisk.</p>
+    <ul>
+        <li><strong>Částka:</strong> roční 500 Kč / denní 100 Kč</li>
+        <li><strong>Číslo účtu:</strong> 2501830407/2010 – <strong class="--extra-important">POZOR, 1.12.2020 proběhla změna čísla účtu!</strong> (QR platby tuto změnu již reflektují)</li>
+        <li><strong>Zpráva pro příjemce:</strong> <a href="https://www.xcontest.org/world/cs/profil/">XContest</a> uživatelské jméno (pokud nepoužíváte XContest, tak: Jméno Příjmení). Prosíme nepište do zprávy nic jiného, usnadní nám to orientaci, děkujeme.</li>
+    </ul>
+    <div class="payments">
+        <figure class="payments__block">
+            <img src="img/qr-500.png" alt="QR platba 500 Kč" class="payments__img">
+            <figcaption>Roční příspěvek 500 Kč</figcaption>
+        </figure>
+        <figure class="payments__block">
+            <img src="img/qr-100.png" alt="QR platba 100 Kč" class="payments__img">
+            <figcaption>Denní příspěvek 100 Kč</figcaption>
+        </figure>
+    </div>
+</section>
 
 
-<h2 id="pocasi">Počasí</h2>
-<ul>
-    <li>📈 <strong><a href="https://sondy.glide.cz/">Meteo sondy</a></strong></li>
-    <li>📷 <a href="http://portal.chmi.cz/files/portal/docs/meteo/kam/plzen2.jpg">Webkamera Plzeň-Mikulka</a></li>
-</ul>
+<section class="wrapper__section">
+    <h2 class="hug" id="pocasi">Počasí</h2>
+    <ul class="emoji_list">
+        <li><span class="emoji_list__bulet">📈</span> <strong><a href="https://sondy.glide.cz/">Meteo sondy</a></strong></li>
+        <li><span class="emoji_list__bulet">📷</span> <a href="http://portal.chmi.cz/files/portal/docs/meteo/kam/plzen2.jpg">Webkamera Plzeň-Mikulka</a></li>
+    </ul>
+</section>
 
 
-<h2 id="kontakty">Kontakty</h2>
-<ul>
-    <!--TODO získat WhatsApp odkaz-->
-    <li><a href="#">WhatsApp skupina</a> – krátkodobé info – svozy, počasí, info ze startovaček, apod.</li>
-    <li><a href="https://www.facebook.com/groups/155215075070108">Facebook skupina</a> – dlouhodobé info – fotky, brigády, plánování výletů, apod.</li>
-</ul>
-<h3>Oficiální informace</h3>
-<ul>
-    <li><strong>Název:</strong> Západočeský paragliding klub Plzeň z.s.</li>
-    <li><strong>IČ</strong> <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=795940">45333581</a></li>
-    <li><strong>Předseda:</strong> Luděk Horák – <a href="mailto:ludek.horak@atlas.cz">ludek.horak@atlas.cz</a> – <a href="tel:+420603446267">+420&nbsp;603&nbsp;446&nbsp;267</a> (také WhatsApp)</li>
-</ul>
-<p>
-    Stanovy klubu, zápisy z valných hromad, přehled hospodaření, smlouvy a jiné dokumenty jsou k dispozici všem členům klubu na vyžádání u předsedy.
-    Důvodem nezveřejnění na těchto webových stránkách je zachování jejich jednoduchosti (abychom nemuseli zavádět přihlašování pro členy klubu).
-</p>
+<section class="wrapper__section">
+    <h2 class="hug" id="kontakty">Kontakty</h2>
+    <div class="contacts">
+        <div class="contacts__block">
+            <!--TODO získat WhatsApp odkaz-->
+            <a href="#" class="contacts__link">
+                <img src="img/whatsapp.png" alt="WhatsApp skupina" class="contacts__logo">
+            </a>
+            <p class="contacts__text">Krátkodobé info – svozy, počasí, info ze startovaček, apod.</p>
+        </div>
+        <div class="contacts__block">
+            <a href="https://www.facebook.com/groups/155215075070108" class="contacts__link">
+                <img src="img/facebook.png" alt="Facebook skupina" class="contacts__logo">
+            </a>
+            <p class="contacts__text">Dlouhodobé info – fotky, brigády, plánování výletů, apod.</p>
+        </div>
+    </div>
+    <h3>Oficiální informace</h3>
+    <ul>
+        <li><strong>Název:</strong> Západočeský paragliding klub Plzeň z.s.</li>
+        <li><strong>IČ:</strong> <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=795940">45333581</a></li>
+        <li><strong>Předseda:</strong> Luděk Horák – <a href="mailto:ludek.horak@atlas.cz">ludek.horak@atlas.cz</a> – <a href="tel:+420603446267">+420&nbsp;603&nbsp;446&nbsp;267</a> (také WhatsApp)</li>
+    </ul>
+    <p>
+        Stanovy klubu, zápisy z valných hromad, přehled hospodaření, smlouvy a jiné dokumenty jsou k dispozici všem členům klubu na vyžádání u předsedy.
+        Důvodem nezveřejnění na těchto webových stránkách je zachování jejich jednoduchosti (abychom nemuseli zavádět přihlašování pro členy klubu).
+    </p>
+</section>
 
 </body>
 </html>

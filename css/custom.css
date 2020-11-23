@@ -51,26 +51,26 @@ a:hover, a:focus {
 
 .start {
     list-style-type: none;
-    padding-left: 1em;
+    padding-left: 0;
 }
 
 .start__item {
+    position: relative;
     margin-top: .25em;
-    padding-left: 1em;
-    text-indent: -2em;
+    padding-left: 2em;
 }
 
 .start__item:first-of-type {
     margin-top: 0;
 }
 
-.start__emoji {
-    margin: 0 .25em;
-}
-
 .start__header {
     font-weight: bold;
-    margin: 0 .25em;
+}
+
+.start__emoji {
+    position: absolute;
+    left: .5em;
 }
 
 @media (max-width: 35em) {

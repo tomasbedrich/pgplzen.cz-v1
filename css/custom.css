@@ -55,7 +55,7 @@ a:hover, a:focus {
 }
 
 .start__item {
-    line-height: 1.75em;
+    margin-top: .25em;
     padding-left: 1em;
     text-indent: -2em;
 }
@@ -72,6 +72,7 @@ a:hover, a:focus {
 @media (max-width: 35em) {
     .start__header {
         display: block;
+        margin-top: .5em;
     }
 }
 

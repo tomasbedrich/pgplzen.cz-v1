@@ -49,6 +49,32 @@ a:hover, a:focus {
     padding: .5em;
 }
 
+.start {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+.start__item {
+    line-height: 1.75em;
+    padding-left: 1em;
+    text-indent: -2em;
+}
+
+.start__emoji {
+    margin: 0 .25em;
+}
+
+.start__header {
+    font-weight: bold;
+    margin: 0 .25em;
+}
+
+@media (max-width: 35em) {
+    .start__header {
+        display: block;
+    }
+}
+
 .payments {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

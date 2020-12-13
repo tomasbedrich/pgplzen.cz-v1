@@ -82,27 +82,6 @@ a:hover, a:focus {
     }
 }
 
-.payments {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-}
-
-.payments__img {
-    width: 100%;
-    max-width: 300px;
-}
-
-@media (max-width: 35em) {
-    .payments {
-        display: block;
-    }
-
-    .payments__block {
-        margin-block-end: 2em;
-    }
-}
-
 .contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

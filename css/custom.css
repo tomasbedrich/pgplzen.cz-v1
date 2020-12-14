@@ -49,6 +49,16 @@ a:hover, a:focus {
     padding: .5em;
 }
 
+.sponsor-logo {
+    margin: 1em 0;
+    max-width: 30vw;
+}
+@media (max-width: 35em) {
+    .sponsor-logo {
+        max-width: 100%;
+    }
+}
+
 .start {
     list-style-type: none;
     padding-left: 0;

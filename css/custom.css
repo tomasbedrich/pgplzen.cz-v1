@@ -113,10 +113,6 @@ a:hover, a:focus {
     max-height: 2.8em;
 }
 
-.contacts__text {
-    margin-top: .75em;
-}
-
 @media (max-width: 35em) {
     .contacts {
         display: block;
